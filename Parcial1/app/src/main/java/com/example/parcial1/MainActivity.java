@@ -28,11 +28,13 @@ public class MainActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String cajita = edtUser.getText().toString();
+                String cajita2 =edtPassword.getText().toString();
 
-                if (edtUser.equals("") || edtPassword.equals("")){
+                if (cajita.equals("") || cajita2.equals("")){
                     Toast.makeText(MainActivity.this,"Digite los campos vacios",Toast.LENGTH_LONG).show();
                 }
-                else if(edtUser.equals("uac123") && edtPassword.equals("12345678")){
+                else if(cajita.equals("uac123") && cajita2.equals("12345678")){
                     Intent intent = new Intent(MainActivity.this,Activity2.class);
                     startActivity(intent);
                     finish();

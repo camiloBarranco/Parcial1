@@ -64,7 +64,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:gravity="left"
-                android:text="Digite su Usuario"
+                android:hint="Digite su Usuario"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
                 android:inputType="text" />
 
             <TextView
@@ -83,6 +85,7 @@
                 android:gravity="left"
                 android:hint="Digite Su contraseña"
                 android:textColorHint="@color/black"
+                android:textColor="@color/black"
                 android:inputType="textPassword" />
 
         </LinearLayout>
